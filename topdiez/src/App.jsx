@@ -1,14 +1,14 @@
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Login from './Login.jsx'
+import Top from './Top.jsx'
 
 function App() {
-
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">
-        Hola
-      </h1>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/top" element={<Top />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
