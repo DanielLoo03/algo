@@ -12,14 +12,30 @@ function Login() {
     console.log("eyeyey q andas haciendo");
   }, []);
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = async (e) => {
     if (e.key === 'Enter') {
-      if (clave === '316') {
-        navigate('/top'); // Redirige si coincide
+      const trimmedClave = clave.trim();
+      if (trimmedClave === '') return;
+
+      const response = await fetch('http://localhost:3000/api/inputs', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ clave: trimmedClave })
+      });
+
+      const data = await response.json();
+      console.log(data);
+
+      if (trimmedClave === '316') {
+        navigate('/top');
       } else {
         setError(true);
-        setTimeout(() => setError(false), 500); // Quita el efecto después de 0.5s
+        setTimeout(() => setError(false), 500);
       }
+
+      setClave('');
     }
   };
 
@@ -29,6 +45,7 @@ function Login() {
         Ingresa la clave: 
       </h1>
       <input
+        id="txtClave"
         type="password"
         value={clave}
         onChange={(e) => setClave(e.target.value)}
