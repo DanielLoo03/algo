@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import BarraNav from './BarraNav.jsx'
 
 function Bienvenida() {
   return (
@@ -6,15 +6,7 @@ function Bienvenida() {
       {/* Fondo con gradiente azul desde abajo */}
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-100 to-white z-0 pointer-events-none" />
 
-      {/* Barra de navegación fija */}
-      <nav className="w-full bg-white text-black py-4 px-8 fixed top-0 left-0 shadow-md z-20 flex justify-between items-center">
-        <h2 className="text-2xl font-semibold">Mi Blog</h2>
-        <ul className="flex space-x-6 text-lg">
-          <li><Link to="/top" className="hover:underline">Top 10</Link></li>
-          <li><Link to="/acerca" className="hover:underline">Algo</Link></li>
-          <li><Link to="/contacto" className="hover:underline">Algo</Link></li>
-        </ul>
-      </nav>
+      <BarraNav />
 
       {/* Contenido principal */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full pt-24 text-center">
