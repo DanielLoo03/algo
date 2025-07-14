@@ -29,7 +29,7 @@ function Login() {
       console.log(data);
 
       if (trimmedClave === '316') {
-        navigate('/top');
+        navigate('/bienvenida');
       } else {
         setError(true);
         setTimeout(() => setError(false), 500);
