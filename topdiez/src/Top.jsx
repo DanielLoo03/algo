@@ -5,10 +5,7 @@ import fondo from './assets/fondoTop.png';
 
 function Top() {
   return (
-    <div className="h-screen bg-no-repeat bg-center bg-cover flex items-center justify-center text-black" style={{ cursor: "url('/girasol.cur'), auto", backgroundImage: `url(${fondo})` }}>
-
-      {/* Fondo degradado que cubre todo el contenedor padre */}
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-100 to-white z-0 pointer-events-none" />
+    <div className="min-h-screen bg-no-repeat bg-center bg-cover flex items-center justify-center text-black" style={{ cursor: "url('/girasol.cur'), auto", backgroundImage: `url(${fondo})` }}>
 
       <BarraNav />
 
@@ -25,7 +22,7 @@ function Top() {
             <li>Cuando jugamos maincra y te ponía cosas mientras estabas volteada, me cagué de risa mil veces viendo tus reacciones, te lo juro que parecía loquito del centro, espero que <Link to="/rip" className="font-semibold hover:underline" style={{ fontFamily: '"Dancing Script", cursive' }}>meper dones</Link> por eso y por la muerte de yasabesq... </li>
             <li>Te conté una vez, pero un día de clases en mates discretas te sentaste atrás de mi para picarme la espalda toda la clase, y en una de las veces que me voltee, te me quedaste viendo lo que se sintió como una eternidad y fue el día q dije <span className="text-red-600 font-bold">jolimadafakinchetmelavoyacomerabesos</span> <span className="text-xs">(no sabe besar)</span></li>
             <li>Octavo lugar</li>
-            <li>Nuestra segunda ida al cine, ahora solos...</li>
+            <li>Nuestra segunda ida al cine ahora solos, estuvimos como cinco horas juntos pero se sintieron como cinco minutos </li>
             <li>El día que estaba buscando un salón en el tercer piso...</li>
           </ol>
         </TarjetaContenido>

@@ -8,8 +8,8 @@ function BarraNav(){
                 <Link to="/bienvenida" className="text-2xl font-semibold hover:underline">Mi Blog</Link>
                 <ul className="flex space-x-6 text-lg">
                     <li><Link to="/top" className="hover:underline">Top 10</Link></li>
-                    <li><Link to="/acerca" className="hover:underline">Algo</Link></li>
-                    <li><Link to="/contacto" className="hover:underline">Algo</Link></li>
+                    <li><Link to="/listas" className="hover:underline">Listas</Link></li>
+                    <li><Link to="/galeria" className="hover:underline">Galería</Link></li>
                 </ul>
             </nav>
         </>
