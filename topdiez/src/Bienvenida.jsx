@@ -1,10 +1,9 @@
 import BarraNav from './BarraNav.jsx'
+import fondo from './assets/fondoBienvenida.jpg';
 
 function Bienvenida() {
   return (
-    <div className="relative h-screen bg-white text-black overflow-hidden">
-      {/* Fondo con gradiente azul desde abajo */}
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-100 to-white z-0 pointer-events-none" />
+    <div className="relative h-screen bg-cover bg-center bg-no-repeat text-black overflow-hidden" style={{ backgroundImage: `url(${fondo})` }}>
 
       <BarraNav />
 
