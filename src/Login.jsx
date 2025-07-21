@@ -23,7 +23,8 @@ function Login() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ clave: trimmedClave })
+        body: JSON.stringify({ clave: trimmedClave }),
+        mode: 'cors'
       });
 
       const data = await response.json();

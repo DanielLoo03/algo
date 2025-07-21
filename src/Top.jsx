@@ -5,7 +5,7 @@ import fondo from './assets/fondoTop.png';
 
 function Top() {
   return (
-    <div className="min-h-screen bg-no-repeat bg-center bg-cover flex items-center justify-center text-black" style={{ cursor: "url('/girasol.cur'), auto", backgroundImage: `url(${fondo})` }}>
+    <div className="min-h-screen bg-no-repeat bg-center bg-cover flex items-center justify-center text-black" style={{ cursor: "url('/algo/girasol.cur'), auto", backgroundImage: `url(${fondo})` }}>
 
       <BarraNav />
 
