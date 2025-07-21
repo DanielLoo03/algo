@@ -17,7 +17,8 @@ function Login() {
       const trimmedClave = clave.trim();
       if (trimmedClave === '') return;
 
-      const response = await fetch('http://localhost:3000/api/inputs', {
+      console.log('API URL:', import.meta.env.VITE_API_URL);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/inputs`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
